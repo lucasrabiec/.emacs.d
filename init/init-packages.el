@@ -3,7 +3,8 @@
 
 (setq package-archives
       '(("gnu" . "https://elpa.gnu.org/packages/")
-	("melpa" . "https://melpa.org/packages/")))
+        ("melpa" . "https://melpa.org/packages/")
+        ("melpa-stable" . "https://stable.melpa.org/packages/")))
 
 (if (not (package-installed-p 'use-package))
     (progn

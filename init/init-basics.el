@@ -1,5 +1,14 @@
 ;; ------=== CUSTOM SETTINGS
 
+;; Open split shell and dir on launch
+(add-hook 'emacs-startup-hook
+          (lambda ()
+            (let ((r (split-window-right)))
+              (ansi-term "/bin/bash")
+              (let ((b (split-window-below)))
+                (select-window b)
+                (find-file "/mnt/c/Workspace")))))
+
 ;; Don't show startup messages.
 (setq-default inhibit-startup-message t
 	      inhibit-startup-echo-area-message t)

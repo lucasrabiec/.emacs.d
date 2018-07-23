@@ -3,3 +3,6 @@
 (require 'init-packages)
 (require 'init-basics)
 (require 'init-common)
+
+(require 'init-ido)
+(require 'init-org)
